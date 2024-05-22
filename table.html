@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+     th, td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 15px;
+    }
+    .table1{
+        border: 1px, solid black;
+        border-collapse: collapse;
+        width: 100%;
+        tr:nth-child(even){
+            background-color: #D6EEEE;
+        }
+    }
+    .table2{
+        border: 1px, solid black;
+        border-collapse: collapse;
+        width: 100%;
+        td:nth-child(even), th:nth-child(even) {
+              background-color: #D6EEEE;
+}
+    }
+    .table3{
+        border: 1px, solid black;
+        border-collapse: collapse;
+        width: 100%;
+        tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+         }
+        th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+       }
+    }
+    .table4{
+        border-collapse: collapse;
+        width: 100%;
+        th,td{
+            padding: 15px;
+            border-bottom: 1px solid #DDD;
+        }
+        tr:hover {background-color: #D6EEEE;}
+    }
+
+</style>
+<body>
+    <h2>Table Border</h2>
+    <table style="border: 1px solid black; width: 100%; text-align: center;">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Place</th>
+        </tr>
+        <tr>
+            <td>Sneha</td>
+            <td>21</td>
+            <td>987456321</td>
+            <td>Malappuram</td>
+        </tr>
+        <tr>
+            <td>Karthik</td>
+            <td>21</td>
+            <td>4578123678</td>
+            <td>Tirur</td>
+        </tr>
+        <tr>
+            <td>Afeef</td>
+            <td>21</td>
+            <td>8848780775</td>
+            <td>Malappuram</td>
+        </tr>
+    </table><br><br><br>
+
+<h2>Vertical Table Headers</h2>
+    <table style="border: 1px solid black; border-collapse: collapse;width: 100%;">
+        <tr>
+            <th>8.00</th>
+            <td>Eranakulam</td>
+            <td>Malappuram</td>
+            <td>Thrissur</td>
+        </tr>
+        <tr>
+            <th>9.00</th>
+            <td>Kottayam</td>
+            <td>Calicut</td>
+            <td>kasargod</td>
+        <tr>
+            <th>10.00</th>
+            <td>Idukki</td>
+            <td>wayanad</td>
+            <td>Trivandrum</td>
+        </tr>
+        <tr>
+            <th>11.00</th>
+            <td>Alappuzha</td>
+            <td>Pathanamthitta</td>
+            <td>Palakkad</td>
+        </tr>
+    </table><br><br><br>
+
+<h2>Both Column and Row header</h2>
+    <table style="border: 1px solid black;border-collapse:collapse;width: 100%;">
+        <tr>
+            <th>   </th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+        </tr>
+        <tr>
+            <th>8.00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>9.00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        <tr>
+            <th>10.00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>11.00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table><br><br><br>
+
+<h2>Header for Multiple columns</h2>
+    <table style="border: 1px solid black;border-collapse: collapse;text-align: center;width: 100%;">
+        <tr>
+            <th colspan="3">STUDENT DETAILS</th>
+        </tr>
+        <tr>
+            <td>Sneha K</td>
+            <td>21</td>
+            <td>Malappuram</td>
+        </tr>
+        <tr>
+            <td>Karthik T</td>
+            <td>21</td>
+            <td>Tirur</td>
+        </tr>
+        <tr>
+            <td>Afeef NK</td>
+            <td>21</td>
+            <td>Malappuram</td>
+        </tr>
+
+        <tr>
+            <td>Danish</td>
+            <td>21</td>
+            <td>malappuram</td>
+        </tr>
+    </table><br><br><br>
+
+
+    <h2>Cell Spacing</h2>
+    <table style="border: 1px solid black; text-align: center;width: 100%; border-spacing: 30px;">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Place</th>
+        </tr>
+        <tr>
+            <td>Sneha</td>
+            <td>21</td>
+            <td>987456321</td>
+            <td>Malappuram</td>
+        </tr>
+        <tr>
+            <td>Karthik</td>
+            <td>21</td>
+            <td>4578123678</td>
+            <td>Tirur</td>
+        </tr>
+        <tr>
+            <td>Afeef</td>
+            <td>21</td>
+            <td>8848780775</td>
+            <td>Malappuram</td>
+        </tr>
+    </table><br><br><br>
+
+
+    <h2>Cell spans two columns</h2>
+    <table style="border: 1px solid black;border-collapse: collapse;width: 100%;">
+        <tr>
+            <th colspan="2">Full Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Sneha</td>
+            <td>K</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Karthik</td>
+            <td>T</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Afeef</td>
+            <td>NK</td>
+            <td>21</td>
+        </tr>
+
+        <tr>
+            <td>Mohammed</td>
+            <td>Danish</td>
+            <td>21</td>
+        </tr>
+    </table><br><br><br>
+
+
+    <h2>Cell spans three rows</h2>
+    <table style="border: 1px solid black;border-collapse: collapse;width: 100%;">
+        <tr>
+            <th rowspan="3">Datas</th>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+        <tr>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+        <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+        </tr>
+        <tr>
+            <td>Data 10</td>
+            <td>Data 11</td>
+            <td>Data 12</td>
+        </tr>
+    </table><br><br><br>
+
+
+    <h2>Cell Span both rows and columns</h2>
+    <table style="border: 1px solid black;border-collapse: collapse;width: 100%;">
+        <tr>
+            <th colspan="3">2022</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <th rowspan="2" colspan="2">FIESTA</th>
+            <td>Data 4</td>
+        </tr>
+        <tr>
+            <td>Data 5</td>
+        </tr>
+        <tr>
+            <td>Data 6</td>
+            <td>Data 7</td>
+            <td>Data 8</td>
+        </tr>
+    </table><br><br><br>
+
+
+    <h2>Zebra striped table</h2>
+    <table class="table1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </table><br><br><br>
+
+
+
+    <h2>Vertical Zebra striped table</h2>
+    <table class="table2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+    </table><br><br><br>
+
+
+    <h2>Combile Vertical & Horizontal Zebra striped table</h2>
+    <table class="table3">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+    </table><br><br><br>
+
+<h2>Bordered Table Dividers</h2>
+    <table class="table4" >
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+        <th>Place</th>
+        </tr>
+        <tr>
+          <td>Mohammed</td>
+          <td>Afeef</td>
+          <td>Malapuram</td>
+        </tr>
+        <tr>
+          <td>Sneha</td>
+          <td>K</td>
+          <td>Anamangad</td>
+        </tr>
+        <tr>
+          <td>Karthik</td>
+          <td>T</td>
+          <td>Tirur</td>
+        </tr>
+      </table>
+</body>
+</html>
