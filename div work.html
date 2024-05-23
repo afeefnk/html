@@ -6,9 +6,8 @@
     <title>Div Project</title>
 </head>
 <style>
-    div.first{
+    div.first,div.second{
         width: 70%;
-        overflow: auto;
         text-align: center;
         font-family: Arial,  sans-serif;
         padding: 50px;
@@ -16,61 +15,56 @@
         display: flex;
     
     }
-    div.first div{
-        width: 33%;
-        float: left;
+    div.first div,div.second div{
+      width: 33%;
     }
-    div.second{
-        width: 70%;
-        overflow: auto;
-        text-align: center;
-        font-family: Arial,  sans-serif;
-        padding-bottom: 50px;
-        margin: auto;
-        display: flex;
-    
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 25px;
     }
-    div.second div{
-        width: 33%;
-        float: left;
+    p{
+        margin-bottom: 20px;
     }
+   
 </style>
 <body>
     <div>
         <div class="first">
-            <div style="background-color: #F0F0F0;border-radius: 15px;">
-                <img src="image1.jpg" alt="Cannot load" width="200px" height="200px" style="border-radius: 50%; margin-top: 20px;" >
+            <div style="background-color: #F0F0F0;">
+                <img src="image1.jpg" alt="Cannot load">
                 <h3>Apple</h3>
-                <P style="margin-bottom: 20px;">Iphone 15 Pro Max</P>
+                <P>Iphone 15 Pro Max</P>
             
             </div>
             <div style="background-color: white;">
-                <img src="image2.jpg" alt="Cannot load" width="200px" height="200px" style="border-radius: 50%; margin-top: 20px;">
+                <img src="image2.jpg" alt="Cannot load">
                 <h3>OnePlus</h3>
-                <p style="margin-bottom: 20px;">OnePlus 12 Pro</p>
+                <p>OnePlus 12 Pro</p>
             </div>
             <div style="background-color: white;">
-                <img src="image3.jpg" alt="Cannot load" width="200px" height="200px" style="border-radius: 50%; margin-top: 20px;">
+                <img src="image3.jpg" alt="Cannot load">
                 <h3>Xiaomi</h3>
-                <p style="margin-bottom: 20px;">Xiaomi 14</p>
+                <p>Xiaomi 14</p>
             </div>
         </div>
         <div class="second">
             <div style="background-color: white;">
-                <img src="image4.jpg" alt="Cannot load" width="200px" height="200px" style="border-radius: 50%; margin-top: 20px;" >
+                <img src="image4.jpg" alt="Cannot load">
                 <h3>Samsung</h3>
-                <P style="margin-bottom: 20px;">Galaxy Z Flip 4</P>
+                <P>Galaxy Z Flip 4</P>
             
             </div>
             <div style="background-color: white;">
-                <img src="image5.jpg" alt="Cannot load" width="200px" height="200px" style="border-radius: 50%; margin-top: 20px;">
+                <img src="image5.jpg" alt="Cannot load">
                 <h3>Google</h3>
-                <p style="margin-bottom: 20px;">Pixel 8 Pro</p>
+                <p>Pixel 8 Pro</p>
             </div>
-            <div style="background-color: #F0F0F0;border-radius: 15px;">
-                <img src="image6.jpg" alt="Cannot load" width="200px" height="200px" style="border-radius: 50%; margin-top: 20px;">
+            <div style="background-color: #F0F0F0;">
+                <img src="image6.jpg" alt="Cannot load">
                 <h3>Vivo</h3>
-                <p style="margin-bottom: 20px;">Vivo V29</p>
+                <p>Vivo V29</p>
             </div>
         </div>
     </div>
