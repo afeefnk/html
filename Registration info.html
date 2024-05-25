@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ff9d00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main {
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:  8px 8px 15px ;
+            
+        }
+        .image {
+            background: url(smoke.jpg);
+            background-size: cover;
+            width: 400px;
+        }
+        .form {
+            padding-top: 50px;
+            padding-right: 85px;
+            padding-left: 40px;
+            padding-bottom: 50px;
+            background-color: #111;
+            color: white;
+            width: 300px;
+        }
+        .form input, .form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            background: transparent;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border-bottom-style: ridge;
+        }
+        .form button {
+            background-color: #00cc66;
+            font-weight: bold;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border:none;
+            border-radius: 20px;
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .form button:hover {
+            background-color: #00994d;
+        }
+        .form option{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image"></div>
+        <div class="form">
+            <h2>Registration info</h2>
+            <form>
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <input type="text" name="address" placeholder="Address" required>
+                <input type="text" name="zipcode" placeholder="Zip Code" required>
+                <select name="state" placeholder="State" style="color: white;" required>
+                    <option value="0" disabled selected>State</option>
+                    <option value="1">Kerala</option>
+                    <option value="2">Tamil Nadu</option>
+                    <option value="3">Karnataka</option>
+                    <option value="4">Andhra Pradesh</option>
+                    <option value="5">Goa</option>
+                    <option value="6">Punjab</option>
+                </select>
+                <input type="text" name="username" placeholder="Username (6-8 characters)" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
