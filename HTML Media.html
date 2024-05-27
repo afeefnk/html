@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media</title>
+</head>
+<style>
+
+    body{
+        background-color:yellow;
+    }
+    ul{
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        background-color:black;
+        padding: 10px;
+    }
+    li a{
+        color: white;
+    }
+</style>
+<body>
+    <h2>Video Tag</h2>
+    <video width="640" height="365" controls>
+        <source src="Video.mp4" type="video/mp4">
+      </video>
+      <br><br><br>
+      <h2>Audio Tag</h2>
+      <audio controls>
+        <source src="Audio.mp3" type="audio/mpeg">
+      </audio>
+      <br><br><br>
+      <h2>YouTube in a frame</h2>
+      <iframe width="515" height="325" src="https://www.youtube.com/embed/VukLV0AoeFA?si=o6V0Oa_XqxPZfyOk">
+    </iframe>
+    <br><br><br>
+    <h2>nav element</h2>
+    <nav>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+        </ul>
+        </nav>
+</body>
+</html>
