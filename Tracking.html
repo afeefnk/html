@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML design</title>
+</head>
+<style>
+    body{
+       background-color: #0b0d24;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+    .container{
+        width: fit-content;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+    
+    .container .profile{
+        width: 300px;
+        margin-right: 24px;
+    }
+    
+    .container .profile1{
+        width: 100%;
+        background-color: #5847eb;
+        padding: 20px;
+        padding-bottom: 100px;
+        border-radius: 16px;
+        position: relative;
+    }
+    
+    .container .report-perfil img{
+        width: 100px;
+        margin-bottom: 32px;
+        border-radius: 100%;
+        border: solid white 4px;
+    }
+    
+    .container .time-option{
+        background-color: #1d2049;
+        padding: 30px;  
+        padding-right: 210px;
+        padding-top: 20px;
+        display: flex;
+        border-radius: 0 0 16px 16px;
+        flex-direction: column;
+        transform: translateY(-1em);
+        z-index: -1;
+    }
+    
+    .container .time-option button{
+        margin: .5em 0;
+        background: transparent;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        letter-spacing: .5px;
+        cursor: pointer;
+    }
+    
+    .container .reports-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+    
+    .reports-container{
+        min-width: 900px;
+    }
+    
+    .report-information{
+        background-color: #1d2049;
+        padding: 1.5em 2em;
+        border-radius: 1em;
+        transform: translateY(-.8em);
+        cursor: pointer;
+    }
+
+    .report-information h2{
+        font-weight: 200;
+        font-size: 4em;
+        margin: .4em 0;
+    }
+    
+    .maindiv{
+        height: 50px;
+        border-radius: 1em 1em 0 0;
+    }
+    
+    .work .maindiv{
+        background-image: url("icon-work.svg");
+        background-color: 	#ff8c66;
+    }
+    
+    .play .maindiv{
+        background-image: url("icon-play.svg");
+        background-color:	#56c2e6;
+    }
+    
+    .study .maindiv{
+        background-image: url("icon-study.svg");
+        background-color: 	#ff5c7c;
+    }
+    
+    .exercise .maindiv{
+        background-image: url("icon-exercise.svg");
+        background-color: #4acf81;
+    }
+    
+    .social .maindiv{
+        background-image: url("icon-social.svg");
+        background-color: #7536d3; 
+    }
+    
+    .self-care .maindiv{
+        background-image: url("icon-self-care.svg");
+        background-color: #f1c65b;
+    }
+.name{
+    font-size: 3em;
+    font-weight: 100;
+}
+.maindiv{
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.profile1 img{
+    border-radius: 50%;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="profile" style="position: relative;">
+            <div class="profile1">
+               <img src="evan.webp" width="100px" height="100px" alt=""><br><br>
+               <p>Report for</p><br>
+               <p class="name">Jeremy Robson</p>
+            </div>
+
+           <div class="time-option" style="position: absolute;">
+               <button style="opacity: 50%;">Daily</button>
+               <button>Weekly</button>
+               <button style="opacity: 50%;">Monthly</button>
+            </div>
+      </div>
+
+      <div class="reports-container">
+        <div class="work">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <ul style="list-style-type: none; display: flex;justify-content: space-between;">
+               <li>Work</li>
+               <li>•••</li>
+            </ul>
+               <h2 class="hours">
+                32hrs
+                </h2>
+                <p class="last-time"> Last week - 26hrs</p>
+          </div>
+        </div>
+
+        <div class="play">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <ul style="list-style-type: none; display: flex;justify-content: space-between;">
+                <li>Play</li>
+                <li>•••</li>
+             </ul>
+              <h2 class="hours">
+               10hrs
+              </h2>
+               <p class="last-time"> Last week - 8hrs</p>
+          </div>
+        </div>
+
+        <div class="study">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <ul style="list-style-type: none; display: flex;justify-content: space-between;">
+                <li>Study</li>
+                <li>•••</li>
+             </ul>
+               <h2 class="hours">
+               4hrs
+               </h2>
+               <p class="last-time"> Last week - 7hrs</p>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <ul style="list-style-type: none; display: flex;justify-content: space-between;">
+                <li>Exercise</li>
+                <li>•••</li>
+             </ul>
+              <h2 class="hours">
+              4hrs
+              </h2>
+              <p class="last-time"> Last week - 5hrs</p>
+          </div>
+        </div>
+
+        <div class="social">
+          <div class="maindiv"> </div>
+          <div class="report-information">
+            <ul style="list-style-type: none; display: flex;justify-content: space-between;">
+                <li>Social</li>
+                <li>•••</li>
+             </ul>
+              <h2 class="hours">
+               5hrs
+               </h2>
+            <p class="last-time"> Last week - 10hrs</p>
+          </div>
+        </div>
+
+        <div class="self-care">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <div class="title">
+                <ul style="list-style-type: none; display: flex;justify-content: space-between;">
+                    <li>Self Care</li>
+                    <li>•••</li>
+                 </ul>
+            </div>
+            <h2 class="hours">
+              2hrs
+            </h2>
+            <p class="last-time"> Last week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+</body>
+
+</html>
+
+
