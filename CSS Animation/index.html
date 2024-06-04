@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000428, #004e92) no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: rotateY(10deg);
+    animation: rotate 10s;
+}
+.container img{
+    transition: width 1s, height 1s, transform 1s;
+    width: 140px; 
+    height: 100px;
+}
+.container img:hover{
+    width: 170px;
+    height: 110px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    padding-bottom: 25px;
+    margin-top: 0;
+}
+h1:hover{
+   color: #ffd700;
+}
+.product {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.product h2 {
+    margin: 0 0 10px;
+    font-size: 28px;   
+}
+
+.product p {
+    margin: 0;
+    font-size: 19px;
+    transition: color 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05) rotateY(5deg) rotateX(5deg);
+    background: rgba(255, 255, 255, 0.2);
+   
+}
+
+.product h2:hover, .product p:hover {
+    color: #ffd700;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <a href="https://www.lenovo.com/in/en/d/deals/?orgRef=https%253A%252F%252Fwww.google.com%252F&gclid=Cj0KCQjw9vqyBhCKARIsAIIcLMH9GjdyrXjZ69eKu1MpoTpTkyZyF7cXvqTMJeSb7ATpVX-JzrLo_TYaAoEhEALw_wcB&sortBy=priceUp&visibleDatas=4376%3ALOQ%2CLegion%2CIdeaPad%2CYoga&cid=in:sem:dq6os5&gad_source=1&s_kwcid=AL!8093!3!700399963346!e!!g!!lenovo%20official%20website&ef_id=Zjxn-wADJofhXQAF:20240604193041:s"><img src="Lenovo-Logo.png" alt="" ></a>  
+        <h1>Welcome to our Community</h1>
+        <div class="product">
+            <h2>Lenovo ThinkPad</h2>
+            <p>The ultimate business laptop, engineered for performance</p>
+        </div>
+        <div class="product">
+            <h2>Lenovo Yoga</h2>
+            <p>Flexibility and power combined in a versatile laptop</p>
+        </div>
+        <div class="product">
+            <h2>Lenovo Legion</h2>
+            <p>Powerful gaming laptops built for gamers</p>
+        </div>
+    </div>
+</body>
+</html>
+
