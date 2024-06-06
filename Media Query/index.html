@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+          background-color: aqua;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1:hover{
+            color: white;
+        }
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        .column {
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+        }
+        @media screen and (max-width: 800px) {
+          .column {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+        <body>
+        <div class="header">
+          <h1>Responsive Image using media Query</h1>
+        </div>
+        <div class="row"> 
+          <div class="column">
+            <img src="img1.jpeg" style="width:100%">
+            <img src="img2.jpg" style="width:100%">
+            <img src="img3.jpeg" style="width:100%">
+            <img src="img4.jpg" style="width:100%">
+            <img src="img5.jpeg" style="width:100%">
+            <img src="img6.jpeg" style="width:100%">
+            <img src="img7.jpg" style="width:100%">
+          </div>
+          
+          <div class="column">
+            <img src="img7.jpg" style="width:100%">
+            <img src="img6.jpeg" style="width:100%">
+            <img src="img5.jpeg" style="width:100%">
+            <img src="img4.jpg" style="width:100%">
+            <img src="img3.jpeg" style="width:100%">
+            <img src="img2.jpg" style="width:100%">
+            <img src="img1.jpeg" style="width:100%">
+          </div> 
+           
+          <div class="column">
+            <img src="img4.jpg" style="width:100%">
+            <img src="img5.jpeg" style="width:100%">
+            <img src="img6.jpeg" style="width:100%">
+            <img src="img7.jpg" style="width:100%">
+            <img src="img1.jpeg" style="width:100%">
+            <img src="img2.jpg" style="width:100%">
+            <img src="img3.jpeg" style="width:100%">
+          </div>
+          
+          <div class="column">
+            <img src="img3.jpeg" style="width:100%">
+            <img src="img2.jpg" style="width:100%">
+            <img src="img6.jpeg" style="width:100%">
+            <img src="img1.jpeg" style="width:100%">
+            <img src="img7.jpg" style="width:100%">
+            <img src="img5.jpeg" style="width:100%">
+            <img src="img4.jpg" style="width:100%">
+          </div>
+        </div>
+</body>
+</html>
