@@ -86,7 +86,6 @@
 
 .navbar.fixed-top {
     display: none;
-    transition: .5s;
 }
 
 .navbar .navbar-nav .nav-link {
